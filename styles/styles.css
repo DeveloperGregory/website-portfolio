@@ -1,0 +1,254 @@
+:root{
+    --bg-color:  rgb(34, 34, 34);
+    --wel-section: #70DC4E;
+    --text-color: rgb(230, 255, 237);
+    --body-text: #006633;
+    --tile-color: #70DC4E;
+    
+    
+}
+body{
+    background-color: var(--bg-color);
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+}
+
+.icon-shown{
+    color: var(--text-color);
+    font-size: 40pt;
+    height: 80px;
+    text-decoration: none;
+    width: 120px;    
+}
+
+.icon-not-shown{
+    color: var(--text-color);
+    font-size: large;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px; 
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.bottom-margin{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.project-tile{
+    background-color: var(--tile-color);
+    border-radius: 20px;
+    border-style: inset;
+    height: 250px;
+    margin: 10px;
+    margin-top:-140px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 27vw;
+}
+
+.project-tile img{
+    border-radius: 6px;
+    height: 73%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    width: 95%;
+}
+
+.project-tile h3, a{
+    margin: 0px;
+}
+
+.reach-me{
+    color: var(--text-color);
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#about{
+    background-color: var(--tile-color);
+    border-radius: 15px;
+    font-size: large;
+    margin: 20px;
+    padding: 20px;
+}
+
+#contact{
+    border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    font-size: 40pt;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-decoration: none;
+    width: 40%;
+}
+#contact-container{
+    margin: 0px;
+}
+#contact div{
+    margin: 10px;
+}
+#navbar{
+    background-color: var(--bg-color);
+    position: fixed;
+    right: 0px;
+    
+    top: 0;
+    
+    z-index:3;
+    
+}
+
+#navline{
+    background-color: var(--bg-color);
+    
+    height: 40px;
+    position: fixed;
+    top: -2px;
+    width: 100%;
+    z-index: 3;
+}
+
+#nav-list{
+    display: flex;
+    left: 750px;
+    list-style-type: none;
+    margin: 7px;
+    
+
+}
+
+#nav-list a{
+    border-bottom-color: var(--text-color);
+    border-radius: 4px;
+    border-bottom-style: solid;
+    color: var(--text-color);
+    font-size: large;
+    font-weight: bold;
+    margin-right: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#nav-list a:hover{
+    background-color: var(--text-color) ;
+    color:  var(--wel-section);
+}
+
+#projects{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "proj1 proj2 proj3"
+    "proj4 proj5 proj6";
+    height: 600px;
+    margin-top: -30px;
+    
+    width: 100%;
+}
+#projects-title{
+    color: var(--text-color);
+    grid-area: header;
+    font-size: x-large;
+    height: 50px;
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+#project-1{
+    grid-area: proj1;
+   
+}
+#project-2{
+    grid-area: proj2;
+}
+#project-3{
+    grid-area: proj3;
+}
+
+#welcome-section{
+    background-image: url('/images/lines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    text-align: center;
+    top: -30px;
+    
+        
+}
+#welcome-section h1{
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 60pt;
+    text-shadow: 4px 4px #414141;
+    top: 40%;
+    width: auto;;
+}
+#welcome-section h3{
+    color: var(--text-color);
+    font-size: 26pt;
+    position: relative;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 4px 4px #414141;
+    width: 300px;
+}
+
+
+@media (max-width: 800px){
+    #welcome-section{
+        height: 70vh;
+    }
+
+    #welcome-section h1{
+        font-size: 40pt;
+    }
+
+    #welcome-section h3{
+        font-size: 20pt;
+    }
+
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    #contact{
+        width: 85%;
+    }
+
+    .project-tile{
+        margin-top:10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        
+    }
+}
+
+
+
+
+
+
